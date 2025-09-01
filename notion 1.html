@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            color: #fff;
+            /* Sets a single font size for the entire body */
+            font-size: 1.2em;
+        }
+
+        .neon-text {
+            /* This will inherit the font size from the body */
+            font-weight: bold;
+            text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
+            animation: neon-glow 1.5s ease-in-out infinite alternate;
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+            /* Removes extra space from paragraphs to make them compact */
+            margin: 0; 
+        }
+
+        @keyframes neon-glow {
+            from {
+                text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
+            }
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 50px #00aaff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="neon-text">
+        Next Target is to reach rank <br>
+        "PRIVATE ⭐⭐" <br>
+        and earn 300 XPs
+    </div>
+</body>
+</html>
